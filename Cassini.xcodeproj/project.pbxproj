@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D542EC221E298CC100814DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542EC211E298CC100814DBC /* AppDelegate.swift */; };
-		D542EC241E298CC100814DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542EC231E298CC100814DBC /* ViewController.swift */; };
 		D542EC271E298CC100814DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D542EC251E298CC100814DBC /* Main.storyboard */; };
 		D542EC291E298CC100814DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D542EC281E298CC100814DBC /* Assets.xcassets */; };
 		D542EC2C1E298CC100814DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D542EC2A1E298CC100814DBC /* LaunchScreen.storyboard */; };
+		D542EC3A1E298D3700814DBC /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542EC391E298D3700814DBC /* DemoURL.swift */; };
+		D564FB091E2992DF00FCEDA2 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D564FB081E2992DF00FCEDA2 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D542EC1E1E298CC100814DBC /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D542EC211E298CC100814DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D542EC231E298CC100814DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D542EC261E298CC100814DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D542EC281E298CC100814DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D542EC2B1E298CC100814DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D542EC2D1E298CC100814DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D542EC391E298D3700814DBC /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		D564FB081E2992DF00FCEDA2 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		D542EC201E298CC100814DBC /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				D542EC211E298CC100814DBC /* AppDelegate.swift */,
-				D542EC231E298CC100814DBC /* ViewController.swift */,
 				D542EC251E298CC100814DBC /* Main.storyboard */,
+				D542EC361E298CF500814DBC /* Modal */,
+				D542EC351E298CE500814DBC /* View */,
+				D542EC341E298CDB00814DBC /* Controller */,
+				D542EC331E298CD000814DBC /* Supporting Files */,
+			);
+			path = Cassini;
+			sourceTree = "<group>";
+		};
+		D542EC331E298CD000814DBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D542EC211E298CC100814DBC /* AppDelegate.swift */,
 				D542EC281E298CC100814DBC /* Assets.xcassets */,
 				D542EC2A1E298CC100814DBC /* LaunchScreen.storyboard */,
 				D542EC2D1E298CC100814DBC /* Info.plist */,
 			);
-			path = Cassini;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D542EC341E298CDB00814DBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D564FB081E2992DF00FCEDA2 /* ImageViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D542EC351E298CE500814DBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D542EC361E298CF500814DBC /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D542EC391E298D3700814DBC /* DemoURL.swift */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D542EC241E298CC100814DBC /* ViewController.swift in Sources */,
 				D542EC221E298CC100814DBC /* AppDelegate.swift in Sources */,
+				D564FB091E2992DF00FCEDA2 /* ImageViewController.swift in Sources */,
+				D542EC3A1E298D3700814DBC /* DemoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,7 @@
 				D542EC321E298CC100814DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
